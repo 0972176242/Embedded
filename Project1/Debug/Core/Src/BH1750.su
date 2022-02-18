@@ -1,0 +1,5 @@
+BH1750.c:5:6:BH1750_reset	24	static
+BH1750.c:11:6:PowerOn	24	static
+BH1750.c:17:6:PowerDown	24	static
+BH1750.c:23:6:setMeasurement	24	static
+BH1750.c:34:7:BH1750_getResult	24	static
