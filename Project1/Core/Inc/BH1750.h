@@ -1,7 +1,13 @@
+/*
+ * BH1750.h
+ *
+ *  Created on: Sep 28, 2021
+ *      Author: Tuan Anh
+ */
 #ifndef INC_BH1750_H_
 #define INC_BH1750_H_
 
-#include "supFunction.h"
+#include "subFunction.h"
 
 #define BH1750_ADDR_LOW_W 0x46
 #define BH1750_ADDR_LOW_R 0x47

@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "supFunction.h"
+#include "subFunction.h"
 #include "stdio.h"
 #include "i2c&lcd.h"
 #include "BH1750.h"

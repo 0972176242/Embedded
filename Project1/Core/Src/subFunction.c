@@ -1,11 +1,11 @@
 /*
- * supFunction.c
+ * subFunction.c
  *
  *  Created on: Nov 30, 2021
  *      Author: Tuan Anh
  */
 
-#include "supFunction.h"
+#include "subFunction.h"
 
 //extern ADC_HandleTypeDef hadc1;
 extern I2C_HandleTypeDef hi2c2;

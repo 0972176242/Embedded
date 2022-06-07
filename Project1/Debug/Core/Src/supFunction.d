@@ -1,5 +1,5 @@
-Core/Src/supFunction.o: ../Core/Src/supFunction.c \
- ../Core/Inc/supFunction.h \
+Core/Src/subFunction.o: ../Core/Src/subFunction.c \
+ ../Core/Inc/subFunction.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -28,9 +28,9 @@ Core/Src/supFunction.o: ../Core/Src/supFunction.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Core/Inc/i2c&lcd.h ../Core/Inc/supFunction.h
+ ../Core/Inc/i2c&lcd.h ../Core/Inc/subFunction.h
 
-../Core/Inc/supFunction.h:
+../Core/Inc/subFunction.h:
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 
@@ -90,4 +90,4 @@ Core/Src/supFunction.o: ../Core/Src/supFunction.c \
 
 ../Core/Inc/i2c&lcd.h:
 
-../Core/Inc/supFunction.h:
+../Core/Inc/subFunction.h:

@@ -1,5 +1,4 @@
-Core/Src/BH1750.o: ../Core/Src/BH1750.c ../Core/Inc/BH1750.h \
- ../Core/Inc/supFunction.h \
+Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -27,11 +26,11 @@ Core/Src/BH1750.o: ../Core/Src/BH1750.c ../Core/Inc/BH1750.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Core/Inc/i2c&lcd.h
+ ../Core/Inc/subFunction.h ../Core/Inc/i2c&lcd.h \
+ ../Core/Inc/subFunction.h ../Core/Inc/i2c&lcd.h ../Core/Inc/BH1750.h \
+ ../Core/Inc/SHT31.h
 
-../Core/Inc/BH1750.h:
-
-../Core/Inc/supFunction.h:
+../Core/Inc/main.h:
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 
@@ -87,4 +86,14 @@ Core/Src/BH1750.o: ../Core/Src/BH1750.c ../Core/Inc/BH1750.h \
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
+../Core/Inc/subFunction.h:
+
 ../Core/Inc/i2c&lcd.h:
+
+../Core/Inc/subFunction.h:
+
+../Core/Inc/i2c&lcd.h:
+
+../Core/Inc/BH1750.h:
+
+../Core/Inc/SHT31.h:

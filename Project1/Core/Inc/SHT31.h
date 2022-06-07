@@ -8,7 +8,7 @@
 #ifndef INC_SHT31_H_
 #define INC_SHT31_H_
 
-#include "supFunction.h"
+#include "subFunction.h"
 
 #define SLAVE_ADDRESS_SHT31A 0x44 // ADDR (pin 2) connect to VSS(GND)
 #define SLAVE_ADDRESS_SHT31B 0x45 // ADDR (pin 2) connect to VDD

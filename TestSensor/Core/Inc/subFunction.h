@@ -1,5 +1,5 @@
 /*
- * supFunction.h
+ * subFunction.h
  *
  *  Created on: Nov 30, 2021
  *      Author: Tuan Anh
@@ -13,7 +13,7 @@
 #include "string.h"
 #include "i2c&lcd.h"
 
-// supFunction
+// subFunction
 void Display_LCD(char s[],int put_cur, float f);
 // display to LCD
 // s[]: name of value

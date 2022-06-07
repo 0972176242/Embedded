@@ -5,7 +5,7 @@
  *      Author: Tuan Anh
  */
 
-#include "supFunction.h"
+#include "subFunction.h"
 
 void lcd_init (void);   // initialize lcd
 

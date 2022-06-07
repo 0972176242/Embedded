@@ -25,7 +25,7 @@
 #include "BH1750.h"
 #include "SHT31.h"
 #include "ESPDataLogger.h"
-#include "supFunction.h"
+#include "subFunction.h"
 #include "i2c&lcd.h"
 /* USER CODE END Includes */
 
@@ -135,20 +135,19 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    // read temperature, humidity from SHT31
 	  get_temp_humi();
-//	  Display_LCD("Temp",1, (float)SHT31.Temperature);
-//	  Display_LCD("Humi",2, (float)SHT31.Humidity);
 
+    // first line of LCD
 	  char str[16];
 	  lcd_put_cur(0,0);
 	  sprintf(str,"T:%.2f,H:%.2f", SHT31.Temperature, SHT31.Humidity);
 	  lcd_send_string(str);
 
-//	  PowerOn();
-//	  BH1750_reset();
-//	  setMeasurement(ONCE_H_MODE);
+    // read light parameter (lux) from BH1750
 	  lux = BH1750_getResult();
 
+    // read value from soil moisture sensor (ADC pin)
 	  HAL_ADC_Start(&hadc1);
 	  HAL_ADC_PollForConversion(&hadc1, 100);
 	  soil_moisture = HAL_ADC_GetValue(&hadc1);
@@ -156,20 +155,23 @@ int main(void)
 
 	  //mapping analog signal to %
 	  fsoil_moisture = 100 - mapping((float)soil_moisture, 0, 4096, 0, 100);
-//	  Display_LCD("%", 2, fsoil_moisture);
 
+    // second line LCD
 	  char str1[16];
 	  lcd_put_cur(1,0);
 	  sprintf(str1,"S:%.2f,L:%.2f", fsoil_moisture, lux);
 	  lcd_send_string(str1);
 
+    // encapsulate sensor's parameter
 	  value_up[0] = SHT31.Temperature;
 	  value_up[1] = SHT31.Humidity;
 	  value_up[2] = fsoil_moisture;
 	  value_up[3] = lux;
 
+    // push upto ThingSpeak base on API key from its own website
 	  ESP_Send_Multi("F18PP9CB39PMVB5H", 4, value_up);
 
+    // minimum delay for free use Thingspeak restriction
 	  HAL_Delay(15000);
 
   }
