@@ -1,0 +1,30 @@
+#######################################
+# Syntax Coloring MyPH
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MyPH		KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin			KEYWORD2
+pHfunction_6_86_4	KEYWORD2
+pHfunction_9_6_86	KEYWORD2
+pH_4_Calibration	KEYWORD2
+pH_6_86_Calibration	KEYWORD2
+pH_9_Calibration	KEYWORD2
+calibration		KEYWORD2
+getA_6_86_4		KEYWORD2
+getA_9_6_86		KEYWORD2
+getB_6_86_4		KEYWORD2		
+getB_9_6_86		KEYWORD2
+getPH_4_Voltage		KEYWORD2
+getPH_6_86_Voltage	KEYWORD2
+getPH_9_Voltage		KEYWORD2
+printCalibPara		KEYWORD2
+printExpression		KEYWORD2
+convertVol_PH		KEYWORD2

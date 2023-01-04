@@ -1,0 +1,21 @@
+#######################################
+# Syntax Coloring MyTDS
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MyTDS	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin			KEYWORD2
+theFunction		KEYWORD2
+convertVol_ECValue	KEYWORD2
+convertVol_TDSValue	KEYWORD2
+TDS_calibration		KEYWORD2
+getKValue		KEYWORD2
+getTDSSolution		KEYWORD2
+printParam		KEYWORD2

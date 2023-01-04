@@ -1,0 +1,25 @@
+#######################################
+# Syntax Coloring For MyDO
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MyDO	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin			KEYWORD2
+DO_function		KEYWORD2
+DO_0_calibration 	KEYWORD2
+DO_100_calibration	KEYWORD2
+DO_calibration		KEYWORD2
+convertVol_mgL		KEYWORD2
+getv0			KEYWORD2
+getv100			KEYWORD2
+getTemperature		KEYWORD2
+getA			KEYWORD2
+getB			KEYWORD2
+getStandardDO		KEYWORD2
